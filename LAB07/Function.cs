@@ -31,14 +31,14 @@ namespace LAB07
         }
         public override string ToString()
         {
-            string result = $"Function(x) [{LowerBound}; {UpperBound} = ";
+            string result = $"Function(x) [{LowerBound}; {UpperBound}] = ";
 
             int Low = (int)Math.Ceiling(LowerBound);
             int Up = (int)Math.Floor(UpperBound);
 
             for(int i = Low; i <= Up; i++)
             {
-                result += $"f(x)={Fun(i)}, ";
+                result += $"f({i})={Fun(i)}, ";
             }
             return result ;
         }
